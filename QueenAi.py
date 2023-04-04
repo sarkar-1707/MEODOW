@@ -1,4 +1,4 @@
-from pyrogram import Client, filters, enum
+from pyrogram import Client, filters, enums
 import asyncio
 from pyrogram.types import *
 from pymongo import MongoClient
