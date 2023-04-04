@@ -55,6 +55,21 @@ IF HAVE ANY QUESTION THEN CONTACT » TO » MY » [OWNER] @Venom_bolte_public""",
             [[InlineKeyboardButton("💟 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 💟", url=f"https://t.me/Its_Venom_family")]]
         ),
     ) 
+@client.on_message(filters.command("stats"))
+def get_stats(client: Client, message: Message):
+    user = app.get_me()
+    chat_list = app.get_dialogs()
+
+    total_chats = len(chat_list)
+    total_groups = sum(chat.is_group for chat in chat_list)
+    total_channels = sum(chat.is_channel for chat in chat_list)
+
+    text = f"⚡Bot username: {user.username}\n"
+    text += f"⚡Total chats: {total_chats}\n"
+    text += f"⚡Total groups: {total_groups}\n"
+    text += f"⚡Total channels: {total_channels}\n"
+
+    message.reply_text(text)
 
 
 @client.on_message(
