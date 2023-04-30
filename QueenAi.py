@@ -14,10 +14,10 @@ import os
 import re
 
 
-API_ID = os.environ.get("API_ID", "15599295") 
-API_HASH = os.environ.get("API_HASH", "4ce42998f7df4a64934294dadca28ae0") 
-SESSION_NAME = os.environ.get("SESSION_NAME", "")
-MONGO_URL = os.environ.get("MONGO_URL", "") 
+API_ID = os.environ.get("API_ID", "25800183") 
+API_HASH = os.environ.get("API_HASH", "bd6be19588610fa9d7c394a914c3b584") 
+SESSION_NAME = os.environ.get("SESSION_NAME", "AQBHwPcpdMimId1rQ2oAH4tXv4bwnH8U_VBk31166YoKYwNzKowzgUPYGkPYhwrBfpqmCIAh3aSu3PhPRkWiOQq01v_rUVkvLL_pIKe3K7NrNaBYwAz0jgQpVnGognuzMpdZq-5_fYd_YaTzUoQGjh5BPCKwCDIxwIhb4O5JRFNuXc9HrVAQz7mRALmxazodXPUaFGvyycE_3x5aWxnk11i10cJYExrBI0jVfiqhaoeE_DtPtskaGC30SGIZFiHyRJIGLj3CgrNkHSp99LKdC8EFI5KzoN2tzQwqSC00jH5xTZJtfMxmaZuqnaSS67MvPFzq3EJNVEX4UWfxiPn9_ldfAAAAAU3jDaEA")
+MONGO_URL = os.environ.get("MONGO_URL", "mongodb+srv://dayava7312:bqyb4KhZrIH2h7js@cluster0.oehalsl.mongodb.net/?retryWrites=true&w=majority") 
 
 
 client = Client(SESSION_NAME, API_ID, API_HASH)
@@ -41,18 +41,18 @@ async def chatbot(client, message):
         photo=f"https://te.legra.ph/file/a406783ab421e5c53ab13.jpg",
         caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━
 👻 A ᴘᴏᴡᴇʀғᴜʟ ᴀɪ ʙᴏᴛ
-ᴏғ ♻️ 𝐌𝐑 𝐀𝐘𝐔𝐒𝐇 ♥️
+ᴏғ ♻️ MR SPYDER ♥️
 ━━━━━━━━━━━━━━━━━
 ᴅᴀᴛᴀʙᴀsᴇ ʙᴀᴄᴋᴇɴᴅ ʙᴏᴛ ғᴏʀ ᴛɢ...
 ┏━━━━━━━━━━━━━━━━━┓
-┣★ ᴄʀᴇᴀᴛᴇʀ [𝐌𝐑 𝐀𝐘𝐔𝐒𝐇](https://t.me/Venom_bolte_public)
-┣★ ʙᴏᴛ ᴜᴘᴅᴀᴛᴇs [ᴏᴜʀ ᴏᴛʜᴇʀ ʙᴏᴛs](https://t.me/Heroku_Dyno)
-┣★ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ [ᴄʜᴀᴛ](https://t.me/Its_Venom_family)
+┣★ ᴄʀᴇᴀᴛᴇʀ [𝐌𝐑 𝐒𝐏𝐘𝐃𝐄𝐑](https://t.me/FYTER_XD)
+┣★ ʙᴏᴛ ᴜᴘᴅᴀᴛᴇs [ᴏᴜʀ ᴏᴛʜᴇʀ ʙᴏᴛs](https://t.me/FYTER_XD)
+┣★ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ [ᴄʜᴀᴛ](https://t.me/FYTER_XD)
 ┗━━━━━━━━━━━━━━━━━┛
 🥵
-IF HAVE ANY QUESTION THEN CONTACT » TO » MY » [OWNER] @Venom_bolte_public""",
+IF HAVE ANY QUESTION THEN CONTACT » TO » MY » [OWNER] @FYTER_XD""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("💟 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 💟", url=f"https://t.me/Its_Venom_family")]]
+            [[InlineKeyboardButton("💟 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 💟", url=f"https://t.me/FYTER_XD")]]
         ),
     ) 
 @client.on_message(filters.command("stats"))
